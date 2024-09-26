@@ -1,0 +1,269 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  display: flex;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #3f36f0;
+  color: #ecd444;
+  text-decoration: none;
+  border-radius: 3px;
+  flex: 1;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a.active {
+  background-color: #ecd444;
+  color: #3f36f0
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.configuraciones-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.divider {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.divider::before {
+  flex-grow: 0;
+  width: 5%;
+}
+
+.divider::after {
+  flex-grow: 1;
+}
+
+.elemento-vacio {
+  float: left;
+  width: calc(30% - 20px);
+  height: 0px;
+  background: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.boton-config {
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}
+
+.boton-config:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton-config img {
+  width: 50%;
+  height: 50%;
+}
+
+.botones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #3f36f0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 50%;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado del dispositivo */
+.device-status-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.status-left p {
+  margin-bottom: 10px;
+}
+
+.status-center {
+  text-align: center;
+}
+
+.status-center img {
+  height: fit-content;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.status-center h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.status-right {
+  text-align: right;
+}
+
+.status-right label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.status-right input[type="checkbox"] {
+  width: 40px;
+  height: 20px;
+}
+
+.alert-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.alert-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Esconde el checkbox original */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo de la "pista" del switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* El círculo interior del switch */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Cambia el color de fondo cuando está activado */
+input:checked + .slider {
+  background-color: #3f36f0;
+}
+
+/* Mueve el círculo cuando está activado */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.mapa img {
+  height: 100%;
+  width: 100%;
+}

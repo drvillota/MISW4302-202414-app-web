@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecurePhone</title>
+    <link rel="stylesheet" href="../css/stylesInicioOnline.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <img src="/images/logoSecurePhone.svg" alt="Logo SecurePhone" />
+        <h1>SecurePhone</h1>
+      </div>
+
+      <nav>
+        <a href="#" class="active">Inicio</a>
+        <a href="ajustes.html">Ajustes</a>
+        <a href="info.html">Información</a>
+      </nav>
+
+      <div class="content">
+        <div class="configuraciones-container">
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <div class="elemento-vacio"></div>
+          <button class="boton-config">
+            <img src="../images/config.svg" alt="Configuraciones" />
+          </button>
+        </div>
+
+        <div class="divider">Tu dispositivo</div>
+
+        <div class="device-status-container">
+          <div class="status-left">
+            <p>Tu dispositivo se encuentra fuera de línea</p>
+            <p>
+              <strong>Última ubicación conocida:</strong> Birdwood Ave,
+              Melbourne VIC 3001, Australia
+            </p>
+          </div>
+          <div class="status-center">
+            <img src="../images/online.svg" alt="Dispositivo conectado" />
+            <h2>Dispositivo en línea</h2>
+          </div>
+          <div class="status-right">
+            <label for="toggle-alarm">Alarma Activada</label>
+            <label class="switch">
+              <input type="checkbox" id="toggle-alarm-checkbox" checked/>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <script>
+            document.getElementById("toggle-alarm-checkbox").addEventListener("change", function() {
+              if (!this.checked) {
+                // Si el checkbox está marcado, redirige a la nueva página
+                window.location.href = "inicioOffline.html"; // Cambia "nueva_vista.html" por la URL de la página que quieras cargar
+              }
+            });
+          </script>
+          
+        </div>
+
+        <div class="mapa">
+            <img src="../images/mapaOnline.svg" alt="MapaOffline" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
